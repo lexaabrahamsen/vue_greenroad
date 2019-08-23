@@ -1,20 +1,34 @@
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
-    <p>Here is a list of recycling centers {{ places }}</p>
+    <p>Find your closest recycling center!</p>
+    <p>Search: <input type="text" v-model="searchTerm"></p>
+    <!--THIS WILL SHOW THE INDEX OF ALL REC PLACES <p>Find your closest recycling center! {{ places }}</p> -->
+    <div v-for="place in filterBy(places, searchTerm, 'name')">
+    <h2>{{ place.name }}</h2>
+    <p>{{ place.address }}</p>
+    <p>{{ place.hours }}</p>
+    <p>{{ place.distance }} mi</p>
+    </div>
   </div>
 </template>
+
 
 <style>
 </style>
 
+
 <script>
 import axios from "axios";
+import Vue2Filters from "vue2-filters";
+
 export default {
+  mixins: [Vue2Filters.mixin],
   data: function() {
     return {
       message: "Green Roads",
-      places: []
+      places: [],
+      searchTerm: ""
     };
   },
   created: function() {
