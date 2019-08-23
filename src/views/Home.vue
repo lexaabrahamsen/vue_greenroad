@@ -1,10 +1,13 @@
 <template>
   <div class="home">
     <h1>{{ message }}</h1>
-    <p>Find your closest recycling center!</p>
-    <p>Search: <input type="text" v-model="searchTerm"></p>
+    <h2>Getting rid of our plastic waste, one road at a time.</h2>
+    <br>
+    <p>Search for your closest Recycling Center</hp>
+    <p><input type="text" v-model="searchTerm"></p>
     <!--THIS WILL SHOW THE INDEX OF ALL REC PLACES <p>Find your closest recycling center! {{ places }}</p> -->
-    <div v-for="place in filterBy(places, searchTerm, 'name')">
+    <div v-for="place in filterBy(places, searchTerm, 'address')">
+    <br>
     <h2>{{ place.name }}</h2>
     <p>{{ place.address }}</p>
     <p>{{ place.hours }}</p>
