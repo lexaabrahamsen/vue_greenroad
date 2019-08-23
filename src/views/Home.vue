@@ -1,5 +1,6 @@
 <template>
   <div class="home">
+    
     <h1>{{ message }}</h1>
     <h2>Getting rid of our plastic waste, one road at a time.</h2>
     <br>
