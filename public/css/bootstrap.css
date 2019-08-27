@@ -3754,7 +3754,7 @@ tbody.collapse.in {
   border-radius: 1px;
 }
 .navbar-toggle .icon-bar + .icon-bar {
-  margin-top: 4px;
+  margin-top: 4px;  
 }
 @media (min-width: 768px) {
   .navbar-toggle {

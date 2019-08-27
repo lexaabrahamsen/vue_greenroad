@@ -35,10 +35,18 @@ a:hover, a:active, a:focus {
 
 p {
   margin-bottom: 30px;
+  color: #2a2a2a;
 }
 
-h1, h2, h3, h4, h5, h6, figure {
+h1, h2, h4, h5, h6, figure {
   color: #000;
+  font-family: "Raleway", Arial, sans-serif;
+  font-weight: 400;
+  margin: 0 0 30px 0;
+}
+
+h3 {
+  color: #fff;
   font-family: "Raleway", Arial, sans-serif;
   font-weight: 400;
   margin: 0 0 30px 0;
