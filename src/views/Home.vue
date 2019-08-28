@@ -25,7 +25,7 @@
               </div>
             </div>
           </li>
-          <li style="background-image: url(images/slide_2.jpg);">
+<!--           <li style="background-image: url(images/slide_2.jpg);">
             <div class="container">
               <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                 <div class="slider-text-inner">
@@ -44,7 +44,7 @@
                 </div>
               </div>
             </div>
-          </li>
+          </li> -->
           </ul>
         </div>
     </aside>
@@ -52,8 +52,8 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
-            <h2>GreenRoads</h2>
-            <p>GreenRoads is a completely circular product that is based on recycled plastics. It has a significantly smaller carbon footprint than traditional road structures thanks to the longer lifespan and the reduction of transport movements involved in its construction.</p>
+            <h2>Paving with Plastic Waste</h2>
+            <!-- <p>Paving with Plastic Waste</p> -->
           </div>
         </div>
         <div class="row">
@@ -109,8 +109,8 @@
         </div>
         <div class="row">
           <!-- <div class="col-md-3 animate-box"> -->
-          <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
-          <div v-for="place in filterBy(places, searchTerm, 'address')">
+          <div class="text-center fh5co-heading animate-box">
+          <div v-for="place in filterBy(places, searchTerm, 'address')" class="col-md-6">
             <a href="#" class="item-grid text-center">
               <div class="image" style="background-image: url(images/image_1.jpg)"></div>
               <div class="col-md text-center fh5co-heading animate-box"></div>
@@ -188,7 +188,8 @@
         </div>
       </div>
     </div>
-    <div id="fh5co-testimony-section">
+<!-- TESTIMONIAL SECTION START -->
+<!--     <div id="fh5co-testimony-section">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
@@ -238,8 +239,8 @@
           </div>
         </div>
       </div>
-    </div>
-
+    </div> -->
+<!-- TESTIMONIAL SECTION END -->
 <!-- THEME BLOG CARDS START   -->
     <!-- <div id="fh5co-blog-section" class="fh5co-light-grey-section">
       <div class="container">
@@ -288,43 +289,71 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
             <h2>Find Out Your Recycling Pickup Schedule</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+            <p>Enter your zip code, and we'll let you know which days your recycling pickup are!. </p>
+            <p><input type="text" v-model="searchTerm"></p>
           </div>
         </div>
         <div class="row">
           <div class="pricing">
             <div class="col-md-3 animate-box">
               <div class="price-box">
-                <h2 class="pricing-plan">Monday</h2>
-                <div class="price"><sup class="currency">$</sup>9<small>/month</small></div>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                <h2 class="pricing-plan">Recycling</h2>
+                <div class="price"><sup class="currency"></sup>MON<small>Pickup</small></div>
+                <p>Collectible items include bottles, bottles, bottles. </p>
                 <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
               </div>
             </div>
 
             <div class="col-md-3 animate-box">
               <div class="price-box">
-                <h2 class="pricing-plan">Tuesday</h2>
-                <div class="price"><sup class="currency">$</sup>27<small>/month</small></div>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                <h2 class="pricing-plan">Recycling</h2>
+                <div class="price"><sup class="currency"></sup>TUE<small>Pickup</small></div>
+                <p>Collectible items include bottles, bottles, bottles. </p>
                 <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
               </div>
             </div>
 
             <div class="col-md-3 animate-box">
               <div class="price-box">
-                <h2 class="pricing-plan">Wednesday</h2>
-                <div class="price"><sup class="currency">$</sup>74<small>/month</small></div>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                <h2 class="pricing-plan">Recycling</h2>
+                <div class="price"><sup class="currency"></sup>WED<small>Pickup</small></div>
+                <p>Collectible items include bottles, bottles, bottles.</p>
                 <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
               </div>
             </div>
 
            <div class="col-md-3 animate-box">
                   <div class="price-box">
-                    <h2 class="pricing-plan">Thursday</h2>
-                    <div class="price"><sup class="currency">$</sup>27<small>/month</small></div>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                    <h2 class="pricing-plan">Recycling</h2>
+                    <div class="price"><sup class="currency"></sup>THU<small>Pickup</small></div>
+                    <p>Collectible items include bottles, bottles, bottles.</p>
+                    <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
+                  </div>
+                </div>
+
+           <div class="col-md-3 animate-box">
+                  <div class="price-box">
+                    <h2 class="pricing-plan">Recycling</h2>
+                    <div class="price"><sup class="currency"></sup>FRI<small>Pickup</small></div>
+                    <p>Collectible items include bottles, bottles, bottles.</p>
+                    <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
+                  </div>
+                </div>
+
+           <div class="col-md-3 animate-box">
+                  <div class="price-box">
+                    <h2 class="pricing-plan">Recycling</h2>
+                    <div class="price"><sup class="currency"></sup>SAT<small>Pickup</small></div>
+                    <p>Collectible items include bottles, bottles, bottles.</p>
+                    <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
+                  </div>
+                </div>
+
+           <div class="col-md-3 animate-box">
+                  <div class="price-box">
+                    <h2 class="pricing-plan">Recycling</h2>
+                    <div class="price"><sup class="currency"></sup>SUN<small>Pickup</small></div>
+                    <p>Collectible items include bottles, bottles, bottles.</p>
                     <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
                   </div>
                 </div>
@@ -337,7 +366,7 @@
 <!-- THEME PRICING SECTION END   -->
 <!-- THEME PRICING SECTION START   -->
 
-    <div id="fh5co-pricing-section">
+<!--     <div id="fh5co-pricing-section">
       <div class="container">
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
@@ -350,24 +379,23 @@
                 <h2 class="pricing-plan">Friday</h2>
                 <div class="price"><sup class="currency">$</sup>9<small>/month</small></div>
                 <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
-                <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
-              </div>
+               <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
+<!--               </div>
             </div>
 
             <div class="col-md-3 animate-box">
               <div class="price-box">
                 <h2 class="pricing-plan">Saturday</h2>
                 <div class="price"><sup class="currency">$</sup>27<small>/month</small></div>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p> -->
                 <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
-              </div>
+<!--               </div>
             </div>
-
-           <div class="col-md-3 animate-box">
+          <div class="col-md-3 animate-box">
                   <div class="price-box">
                     <h2 class="pricing-plan">Sunday</h2>
                     <div class="price"><sup class="currency">$</sup>27<small>/month</small></div>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p> -->
                     <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
                   </div>
                 </div>
@@ -430,7 +458,9 @@ export default {
     return {
       message: "Green Roads",
       places: [],
-      searchTerm: ""
+      searchTerm: "",
+      active: true,
+      'text-danger': false
     };
   },
   // WORKING LIST OF RECYCLING CENTERS
