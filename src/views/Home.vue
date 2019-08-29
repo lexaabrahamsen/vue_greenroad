@@ -19,8 +19,8 @@
               <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                 <div class="slider-text-inner">
                   <h2>GreenRoads</h2>
-                  <h3>Getting rid of our plastic waste, one road at a time.</h3> 
-                  <p><a href="#" class="btn btn-primary btn-lg">Search for my recycling center</a></p>
+                  <h3>Using Plastic Waste to Pave Roads</h3> 
+                  <p><a href="#" class="btn btn-primary btn-lg">Find my recycling center</a></p>
                 </div>
               </div>
             </div>
@@ -101,7 +101,7 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
             <h2>Find Your Nearest Recycling Center</h2>
-            <p>Enter your zip code below</p>
+            <p>Enter your city and state</p>
             <p><input type="text" v-model="searchTerm"></p>
             <!-- THIS WILL SHOW THE INDEX OF ALL REC PLACES  -->
 <!--             <p>Type your zip code to find your nearest recycling center! {{ places }} </p> -->
