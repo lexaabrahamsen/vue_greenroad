@@ -325,40 +325,40 @@
               </div>
             </div>
 
-           <div class="col-md-3" v-if="zips.zip === 'Thu'">
-                  <div class="price-box">
-                    <h2 class="pricing-plan">Recycling</h2>
-                    <div class="price"><sup class="currency"></sup>THU<small>Pickup</small></div>
-                    <p>glass • beverage containers • aluminum cans • white goods • tin cans</p>
-                    <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
-                  </div>
-                </div>
+            <div class="col-md-3" v-if="zips.zip === 'Thu' || card">
+              <div class="price-box">
+                <h2 class="pricing-plan">Recycling</h2>
+                <div class="price"><sup class="currency"></sup>THU<small>Pickup</small></div>
+                <p>glass • beverage containers • aluminum cans • white goods • tin cans</p>
+                <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
+              </div>
+            </div>
 
-           <div class="col-md-3" v-if="zips.zip === 'Fri'">
-                  <div class="price-box">
-                    <h2 class="pricing-plan">Recycling</h2>
-                    <div class="price"><sup class="currency"></sup>FRI<small>Pickup</small></div>
-                    <p>glass • beverage containers • aluminum cans • white goods • tin cans</p>
-                    <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
-                  </div>
-                </div>
+           <div class="col-md-3" v-if="zips.zip === 'Fri' || card">
+              <div class="price-box">
+                <h2 class="pricing-plan">Recycling</h2>
+                <div class="price"><sup class="currency"></sup>FRI<small>Pickup</small></div>
+                <p>glass • beverage containers • aluminum cans • white goods • tin cans</p>
+                <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
+              </div>
+          </div>
 
-           <div class="col-md-3" v-if="zips.zip === 'Sat'">
-                  <div class="price-box">
-                    <h2 class="pricing-plan">Recycling</h2>
-                    <div class="price"><sup class="currency"></sup>SAT<small>Pickup</small></div>
-                    <p>glass • beverage containers • aluminum cans • white goods • tin cans</p>
-                    <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
-                  </div>
-                </div>
+           <div class="col-md-3" v-if="zips.zip === 'Sat' || card">
+              <div class="price-box">
+                <h2 class="pricing-plan">Recycling</h2>
+                <div class="price"><sup class="currency"></sup>SAT<small>Pickup</small></div>
+                <p>glass • beverage containers • aluminum cans • white goods • tin cans</p>
+                <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
+              </div>
+            </div>
 
            <div class="col-md-3" v-if="zips.zip === 'Sun'|| card">
-                  <div class="price-box">
-                    <h2 class="pricing-plan">Recycling</h2>
-                    <div class="price"><sup class="currency"></sup>SUN<small>Pickup</small></div>
-                    <p>glass • beverage containers • aluminum cans • white goods • tin cans</p>
-                   <!--  <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
-                  </div>
+              <div class="price-box">
+                <h2 class="pricing-plan">Recycling</h2>
+                <div class="price"><sup class="currency"></sup>SUN<small>Pickup</small></div>
+                <p>glass • beverage containers • aluminum cans • white goods • tin cans</p>
+               <!--  <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
+              </div>
           <!-- <div>
             <p>Type in your phone number and we'll send you a reminder text!</p>
             <p><input type="text" v-model="reminder"></p>
@@ -368,7 +368,7 @@
               </div>
             </div>
           </div>
-         <br> " "</br>
+           <br> " "</br>
           <div class="row">
             <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
               <h2>Need a Reminder?</h2>
