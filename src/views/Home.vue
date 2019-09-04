@@ -7,7 +7,7 @@
       </header>
     
     <div class="container">
-      
+
     </div>
 <!-- FEATURES START -->
     <aside id="fh5co-hero" class="js-fullheight">
@@ -19,7 +19,7 @@
               <div class="col-md-10 col-md-offset-1 text-center js-fullheight slider-text">
                 <div class="slider-text-inner">
                   <h2>GreenRoads</h2>
-                  <h3>Using Plastic Waste to Pave Roads</h3> 
+                  <h3><strong>Using Plastic Waste to Pave Roads</strong></h3> 
                   <p><a href="#" class="btn btn-primary btn-lg">Find my recycling center</a></p>
                 </div>
               </div>
@@ -62,7 +62,7 @@
               <i class="icon-user"></i>
               <div class="desc">
                 <h2>3x Longer</h2>
-                <p>The expected lifetime of a Green Road is two to three times as long as that of traditional paving.</p>
+                <p>The expected lifetime of a GreenRoad is two to three times longer.</p>
               </div>
             </div>
           </div>
@@ -71,7 +71,7 @@
               <i class="icon-arrow-right"></i>
               <div class="desc">
                 <h2>70% Faster</h2>
-                <p>The expected construction time of a new road will be reduced by approximately 70%.</p>
+                <p>Construction time of a GreenRoad will be reduced by 70%.</p>
               </div>
             </div>
           </div>
@@ -80,7 +80,7 @@
               <i class="icon-user"></i>
               <div class="desc">
                 <h2>4x Lighter</h2>
-                <p>A GreenRoads is four times as light as a traditional road structure.</p>
+                <p>A GreenRoad is four times as light as a traditional road structure.</p>
               </div>
             </div>
           </div>
@@ -89,7 +89,7 @@
               <i class="icon-recycle"></i>
               <div class="desc">
                 <h2>100% Circular</h2>
-                <p>A GreenRoads is 100% curcular and is made from recycled plastic as much as possible.</p>
+                <p>A GreenRoad is made from recycled plastic as much as possible.</p>
               </div>
             </div>
           </div>
@@ -101,7 +101,7 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
             <h2>Find Your Nearest Recycling Center</h2>
-            <p>Enter your city and state</p>
+            <p>Enter your city</p>
             <p><input type="text" v-model="searchTerm"></p>
             <!-- THIS WILL SHOW THE INDEX OF ALL REC PLACES  -->
 <!--             <p>Type your zip code to find your nearest recycling center! {{ places }} </p> -->
@@ -289,80 +289,97 @@
         <div class="row">
           <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
             <h2>Find Out Your Recycling Pickup Schedule</h2>
-            <p>Enter your zip code, and we'll let you know which days your recycling pickup are!. </p>
-            <p><input type="text" v-model="searchTerm"></p>
+            <p>Enter your zip code, and we'll let you know which day your recycling pickup is! </p>
+            <p><input type="text" v-model="zip"></p>
+            <p><a class="btn btn-primary btn-lg" v-on:click="showDay">Show me my day!</a></p>
+          </div>
           </div>
         </div>
         <div class="row">
           <div class="pricing">
-            <div class="col-md-3 animate-box">
+            <div class="col-md-3" v-if="zips.zip === 'Mon' || card">
               <div class="price-box">
                 <h2 class="pricing-plan">Recycling</h2>
                 <div class="price"><sup class="currency"></sup>MON<small>Pickup</small></div>
-                <p>Collectible items include bottles, bottles, bottles. </p>
+                {{ zips.zip }}
+                <p>glass • beverage containers • aluminum cans • white goods • tin cans</p>
                 <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
               </div>
             </div>
 
-            <div class="col-md-3 animate-box">
+            <div class="col-md-3" v-if="zips.zip === 'Tue'|| card">
               <div class="price-box">
                 <h2 class="pricing-plan">Recycling</h2>
                 <div class="price"><sup class="currency"></sup>TUE<small>Pickup</small></div>
-                <p>Collectible items include bottles, bottles, bottles. </p>
+                <p>glass • beverage containers • aluminum cans • white goods • tin cans</p>
                 <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
               </div>
             </div>
 
-            <div class="col-md-3 animate-box">
+            <div class="col-md-3" v-if="zips.zip === 'Wed'|| card">
               <div class="price-box">
                 <h2 class="pricing-plan">Recycling</h2>
                 <div class="price"><sup class="currency"></sup>WED<small>Pickup</small></div>
-                <p>Collectible items include bottles, bottles, bottles.</p>
+                <p>glass • beverage containers • aluminum cans • white goods • tin cans</p>
                 <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
               </div>
             </div>
 
-           <div class="col-md-3 animate-box">
+           <div class="col-md-3" v-if="zips.zip === 'Thu'">
                   <div class="price-box">
                     <h2 class="pricing-plan">Recycling</h2>
                     <div class="price"><sup class="currency"></sup>THU<small>Pickup</small></div>
-                    <p>Collectible items include bottles, bottles, bottles.</p>
+                    <p>glass • beverage containers • aluminum cans • white goods • tin cans</p>
                     <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
                   </div>
                 </div>
 
-           <div class="col-md-3 animate-box">
+           <div class="col-md-3" v-if="zips.zip === 'Fri'">
                   <div class="price-box">
                     <h2 class="pricing-plan">Recycling</h2>
                     <div class="price"><sup class="currency"></sup>FRI<small>Pickup</small></div>
-                    <p>Collectible items include bottles, bottles, bottles.</p>
+                    <p>glass • beverage containers • aluminum cans • white goods • tin cans</p>
                     <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
                   </div>
                 </div>
 
-           <div class="col-md-3 animate-box">
+           <div class="col-md-3" v-if="zips.zip === 'Sat'">
                   <div class="price-box">
                     <h2 class="pricing-plan">Recycling</h2>
                     <div class="price"><sup class="currency"></sup>SAT<small>Pickup</small></div>
-                    <p>Collectible items include bottles, bottles, bottles.</p>
+                    <p>glass • beverage containers • aluminum cans • white goods • tin cans</p>
                     <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
                   </div>
                 </div>
 
-           <div class="col-md-3 animate-box">
+           <div class="col-md-3" v-if="zips.zip === 'Sun'|| card">
                   <div class="price-box">
                     <h2 class="pricing-plan">Recycling</h2>
                     <div class="price"><sup class="currency"></sup>SUN<small>Pickup</small></div>
-                    <p>Collectible items include bottles, bottles, bottles.</p>
-                    <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
+                    <p>glass • beverage containers • aluminum cans • white goods • tin cans</p>
+                   <!--  <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
                   </div>
+          <!-- <div>
+            <p>Type in your phone number and we'll send you a reminder text!</p>
+            <p><input type="text" v-model="reminder"></p>
+            <p><a href="" class="btn btn-primary btn-lg" v-on:click="textMessage">Send me a reminder!</a></p>
+          </div> -->
                 </div>
               </div>
             </div>
           </div>
+         <br> " "</br>
+          <div class="row">
+            <div class="col-md-6 col-md-offset-3 text-center fh5co-heading animate-box">
+              <h2>Need a Reminder?</h2>
+              <p>Type in your phone number and we'll send you a reminder text with what day your recycling pickup is cheduled for this week!</p>
+              <p><input type="text" v-model="reminder"></p>
+              <p><a href="" class="btn btn-primary btn-lg" v-on:click="textMessage">Send me a reminder!</a></p>
+          </div>
         </div>
-      </div>
-    </div>
+       </div>
+     </div>
+   </div>
 <!-- THEME PRICING SECTION END   -->
 <!-- THEME PRICING SECTION START   -->
 
@@ -399,13 +416,13 @@
                     <!-- <a href="#" class="btn btn-select-plan btn-sm">Select Plan</a> -->
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+              <!-- </div> -->
+            <!-- </div> -->
+          <!-- </div> -->
+        <!-- </div> -->
+      <!-- </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
 <!-- THEME PRICING SECTION END   -->
 
 
@@ -459,8 +476,13 @@ export default {
       message: "Green Roads",
       places: [],
       searchTerm: "",
+      zip: "",
       active: true,
+      reminder: "",
+      zips: "",
+      card: true,
       'text-danger': false
+
     };
   },
   // WORKING LIST OF RECYCLING CENTERS
@@ -477,6 +499,21 @@ export default {
     // });
 
   },
-  methods: {}
+  methods: {
+    textMessage: function() { 
+      console.log("hello");
+      axios.post("/api/messages").then(response => {
+      });
+    },    
+
+    showDay: function() { 
+      console.log("hello 2");
+      axios.get("/api/zips/5").then(response => {
+        console.log(response.data);
+        this.zips = response.data;
+        this.card = false;
+      });
+    },
+  }
 };
 </script>

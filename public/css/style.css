@@ -41,7 +41,7 @@ p {
 h1, h2, h4, h5, h6, figure {
   color: #000;
   font-family: "Raleway", Arial, sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0 0 30px 0;
 }
 
@@ -527,8 +527,8 @@ h3 {
   min-height: 700px;
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner h2 {
-  font-size: 70px;
-  font-weight: 400;
+  font-size: 100px;
+  font-weight: 600;
   color: #fff;
 }
 @media screen and (max-width: 768px) {
@@ -537,7 +537,7 @@ h3 {
   }
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner .fh5co-lead {
-  font-size: 20px;
+  font-size: 80px;
   color: #fff;
 }
 #fh5co-hero .flexslider .slider-text > .slider-text-inner .fh5co-lead .icon-heart {
@@ -1196,6 +1196,13 @@ h3 {
   font-weight: 700;
   color: #888f94;
 }
+
+/***************ACTIVE PRICE BOX***************/
+/*#fh5co-pricing-section .active {
+  border-color: #27E1CE !important;
+}*/
+
+
 #fh5co-pricing-section .pricing-plan.pricing-plan-offer {
   margin-bottom: 24px;
 }
